@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel='stylesheet' href='style.css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
@@ -14,47 +15,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ресторан</title>
 </head>
 
 <body>
-
+    <!-- Header Section -->
     <div class='header'>
         <div class='container'>
             <div class='header-line'>
+                <!-- Logo -->
                 <div class='header-logo'>
-                    <img src="logo.png" alt="">
+                    <a href="index.html"><img src="menu/logo.png" alt=""></a>
                 </div>
 
+                <!-- Navigation -->
                 <div class='nav'>
-                    <a class='nav-item' href="index.html">ГЛАВНАЯ</a>
-                    <a class='nav-item' href="#name_link2">МЕНЮ</a>
-                    <a class='nav-item' href="#name_link1">О НАС</a>
+                    <a class='nav-item' id="button1" href="#name_link1">О нас</a>
+                    <a class='nav-item' id="button2" href="#name_link2">Меню</a>
+                    <a class='nav-item' id="button3" href="#name_link3">Отзывы</a>
+                    <a class='nav-item' id="button4" href="#name_link4">Галерея</a>
+                    <a class='nav-item' id="button5" href="#name_link5">Сотрудники</a>
                 </div>
 
-                <div class='cart'>
-                    <a href="#">
-                        <img class='cart-img' src="cart.png" alt="">
-                    </a>
-                </div>
+                
 
-                <div class='phone'>
-                    <div class='phone-holder'>
-                        <div class='phone-img'>
-                            <img src="phone.png" alt="">
-                        </div>
-
-                        <div class='number'><a class='num' href='#'>+7 (777) 667-57-77</a></div>
-                    </div>
-
-                    <div class='phone-text'>
-                        Свяжитесь с нами для <br> бронирования
-                    </div>
-                </div>
-
+                <!-- Reservation Button -->
                 <button class="primary" onclick="window.dialog.showModal();">Забронировать</button>
 
+                <!-- Reservation Dialog -->
                 <dialog id="dialog">
                     <h2>+7 (777) 667-57-77</h2>
                     <p>Звоните. Бронирование производится через телефон.</p>
@@ -62,102 +50,77 @@
                 </dialog>
             </div>
 
-
+            <!-- Header Content -->
             <div class='header-down'>
-
                 <div class='header-title'>
                     Добро пожаловать в
-
                     <div class='header-subtitle'>
                         Наш ресторан
                     </div>
-
                     <div class='header-suptitle'>
                         ДОМ ЛУЧШЕЙ ЕДЫ
                     </div>
-
                     <a class='header-bth' href="#name_link2">
                         <button class='header-button'>Меню</button>
                     </a>
-
                 </div>
-
             </div>
-
         </div>
-
     </div>
-
+    <!-- Cards Section -->
     <div class='cards'>
-
         <div class='container'>
-
             <div class='cards-holder'>
-
+                <!-- Card 1 -->
                 <div class='card'>
-
                     <div class='card-image'>
-                        <img class='card-img' src='card.png'>
+                        <img class='card-img' src='menu/card.png'>
                     </div>
-
                     <div class='card-title'>
                         Магическая <span>Атмосфера</span>
                     </div>
-
                     <div class='card-desc'>
                         В нашем заведении царит магическая атмосфера наполненная вкусными ароматами
                     </div>
-
                 </div>
 
+                <!-- Card 2 -->
                 <div class='card'>
-
                     <div class='card-image'>
-                        <img class='card-img' src='card.png'>
+                        <img class='card-img' src='menu/card.png'>
                     </div>
-
                     <div class='card-title'>
                         Лучшее качество <span>Еды</span>
                     </div>
-
                     <div class='card-desc'>
                         Качество нашей Еды - отменное!
-
                     </div>
-
                 </div>
 
+                <!-- Card 3 -->
                 <div class='card'>
-
                     <div class='card-image'>
-                        <img class='card-img' src='card.png'>
+                        <img class='card-img' src='menu/card.png'>
                     </div>
-
                     <div class='card-title'>
                         Недорогая <span>Еда</span>
                     </div>
-
                     <div class='card-desc'>
                         Стоимость нашей Еды зависит только от ее количества. Качество всегда на высоте!
                     </div>
-
                 </div>
             </div>
         </div>
-
     </div>
-
-
+    <!-- History Section -->
+    <a id="name_link1"></a>
     <div class='history'>
-
         <div class='container'>
-
             <div class='history-holder'>
                 <div class='history-info'>
                     <div class='history-title'>
                         <a id="name_link1"></a> Наша <span>История</span>
                     </div>
-
                     <div class='history-desc'>
                         Как и у любого другого самобытного места, у нас есть своя, особая история. Идея ресторана пришла
                         основателям неожиданно. Во время прогулки по лесу создатель нашего ресторана застрял в сотнях
@@ -165,68 +128,32 @@
                         обустровать себе нехитрый быт, добывать и готовить себе еду.
                     </div>
 
-
+                    <!-- Number Statistics -->
                     <div class='history-number'>
                         <div class='number-item'>
                             93 <span>Напитки</span>
                         </div>
-
                         <div class='number-item'>
                             206 <span>Еда</span>
                         </div>
-
                         <div class='number-item'>
                             71 <span>Закуски</span>
                         </div>
                     </div>
-                </div>
-
-                <div class='history-images'>
-                    <img class='imgages-1' src="1.jpg" alt="">
-                    <img class='imgages-2' src="2.jpg" alt="">
-                    <img class='imgages-3' src="3.jpg" alt="">
-                </div>
+                </div>       
             </div>
-
         </div>
-
     </div>
-
-
-    <div class='black-block'>
-
-        <div class='container'>
-
-            <div class='block-holder'>
-                <div class='left'>
-                    <div class='left-title'>
-                        Отпразднуйте в одном из <br> самых лучших ресторанов.
-                    </div>
-
-                    <div class='left-text'>
-                        Только в этом месяце бизнес-ланч от 250 ₽
-                    </div>
-                </div>
-
-                <div class='right'>
-
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-
-
+    <!-- Dishes Section -->
+    <a id="name_link2"></a>
     <div class='dishes'>
-
         <div class='container'>
-
             <div class='dishes-title'>
-                <a id="name_link2"></a>Наши <span>Блюда</span>
+                </a>Наши <span>Блюда</span>
             </div>
         </div>
 
+        <!-- Dishes Categories -->
         <ul>
             <li><a href="market.html"><img src="menu/Snacks.jpg" alt="" />Закуски</a></li>
             <li><a href="market.html"><img src="menu/Soups.jpg" alt="" />Супы</a></li>
@@ -241,107 +168,141 @@
             <li><a href="market.html"><img src="menu/Vegetables.jpg" alt="" />Овощи</a></li>
             <li><a href="market.html"><img src="menu/Desserts.jpg" alt="" />Десерты</a></li>
         </ul>
-
-
-
+    </div>
+        <!-- Comment Section -->
+        <a id="name_link3"></a>
         <div class='coment'>
-
-            <div class='container'>
-
-                <div class='coment-text'>
-                    Я надолго запомню элеш в этом ресторане! Кусочек родной Казани! Буду рекомендовать этот ресторан
-                    своим друзьям и родственникам!
+            
+            <figure class="coment-item">
+                <blockquote>Лучший <br> симулятор <br> урона <br> с мастифа <br>на 13                                                                                    ㅤ
+                  <div class="arrow"></div>
+                </blockquote>
+                <img src="menu/face3.png" />
+                <div class="author">
+                  <h5>Арслан</h5>
                 </div>
-
-                <div class='coment-image'>
-                    <img src='face.png' class='coment-img'>
+              </figure>
+              <figure class="coment-item hover">
+                <blockquote>Еда вкусная, обстановка уютная, но борьба с ложкой в супе стала главным событием вечера. <br> Ложка выиграла. <br>  Ресторан - 1, Я - 0.             
+                    <div class="arrow"></div>
+                </blockquote>
+                <img src="menu/face2.jpg"  />
+                <div class="author">
+                  <h5>Булат</h5>
                 </div>
-
-                <div class='coment-type'>
-                    Посетитель
+              </figure>
+              <figure class="coment-item">
+                <blockquote>Я надолго запомню элеш в этом ресторане! Кусочек родной Казани! Буду рекомендовать этот ресторан своим друзьям и родственникам!
+                  <div class="arrow"></div>
+                </blockquote>
+                <img src="menu/face.png" />
+                <div class="author">
+                  <h5>Ранис</h5>
                 </div>
-
-                <div class='coment-name'>
-                    Ранис
-                </div>
-
-            </div>
-
+            </figure>
         </div>
-
-
+        <!-- Gallery Section -->
         <div class='galery'>
-
+            <a id="name_link4"></a>
             <div class='container'>
-
                 <div class='galery-title'>
                     Галерея <span>Блюд</span>
                 </div>
 
 
                 <div class='galery-content'>
-
                     <div class='galery-left'>
-
                         <div class='galery-up'>
-                            <img class='img-gal high' src="10.jpg">
+                            <img class='img-gal high' src="menu/10.jpg">
                         </div>
-
                         <div class='galery-down'>
-                            <img class='img-gal' src="20.jpg">
-                            <img class='img-gal' src="30.jpg">
+                            <img class='img-gal' src="menu/20.jpg">
+                            <img class='img-gal' src="menu/30.jpg">
                         </div>
-
                     </div>
 
                     <div class='galery-right'>
-
                         <div class='galery-up'>
-                            <img class='img-gal' src="22.jpg">
-                            <img class='img-gal' src="33.jpg">
+                            <img class='img-gal' src="menu/22.jpg">
+                            <img class='img-gal' src="menu/3.jpg">
                         </div>
-
                         <div class='galery-down'>
-                            <img class='img-gal high' src="11.jpg">
+                            <img class='img-gal high' src="menu/11.jpg">
                         </div>
-
                     </div>
-
                 </div>
-
-
             </div>
-
         </div>
-
-
+        <!-- Cook Section -->
         <div class='cook'>
-
+            <a id="name_link5"></a>
             <div class='container'>
-
                 <div class='cook-title'>
                     Наши <span>Повара</span>
                 </div>
-
-
                 <div class='cook-content'>
-                    <img src='1c.jpg'>
-                    <img src='2c.jpg'>
-                    <img src='3c.jpg'>
+                    <!-- Images of Cooks -->
+                    <img src='menu/1c.jpg'>
+                    <img src='menu/2c.jpg'>
+                    <img src='menu/3c.jpg'>
                 </div>
-
             </div>
-
         </div>
-
-
-        <div class='footer'>
-            Ждем вас в нашем ресторане
-        </div>
-
-
-        <script src='app.js'></script>
-
+        <!-- Footer Section -->
+        <footer class="footer-distributed">
+        
+                    <div class="footer-left">
+        
+                        <a href="index.html"><img src="menu/logo2.png" alt=""></a>
+        
+                        <p class="footer-links">
+                            <a class='nav-item' id="button1" href="#name_link1">О нас</a>
+                            <a class='nav-item' id="button2" href="#name_link2">Меню</a>
+                            <a class='nav-item' id="button3" href="#name_link3">Отзывы</a>
+                            <a class='nav-item' id="button4" href="#name_link4">Галерея</a>
+                            <a class='nav-item' id="button5" href="#name_link5">Сотрудники</a>
+                        </p>
+        
+                        <p class="footer-company-name">@2023 ALIMOV | Restaurant & Bar</p>
+                    </div>
+        
+                    <div class="footer-center">
+        
+                        <div>
+                            <i class="fa fa-map-marker"></i>
+                            <p><span>г.Казань </span> Файзи 12</p>
+                        </div>
+        
+                        <div>
+                            <i class="fa fa-phone"></i>
+                            <p>+7 (777) 667-57-77</p>
+                        </div>
+        
+                        <div>
+                            <i class="fa fa-envelope"></i>
+                            <p><a href="#">rasimalimov26@gmail.com</a></p>
+                        </div>
+        
+                    </div>
+        
+                    <div class="footer-right">
+        
+                        <p class="footer-company-about">
+                            <span>О компании</span>
+                            "Сайт разработан в целях выполнения курсового проекта."
+                        </p>
+        
+                        <div class="footer-icons">
+        
+                            <img href="#" class='instagram' src='menu/instagram.png'>
+                                    
+                        </div>
+        
+                    </div>
+        
+        </footer>
+        <!-- JavaScript Files -->
+    <script src='app.js'></script>
 </body>
 
 </html>

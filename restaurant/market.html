@@ -1,144 +1,329 @@
 <!DOCTYPE html>
-<div lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta property="og:image:width" content="400" />
+  <meta property="og:image:height" content="300" />
   <title>Меню</title>
-<meta property="og:image:width" content="400" />
-<meta property="og:image:height" content="300" /><link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
-<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'><link rel="stylesheet" href="./style.css">
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet" href="./market.css">
+  <link rel="stylesheet" href="./market_nav.css">
 </head>
-<div class='conta'>
-  <div class='header-line market'>
-      <div class='header-logo'>
-          <img src="logo.png" alt="">
-      </div>
+<body>
+  
+  <div class='header-line'>
+    <!-- Logo -->
+    <div class='header-logo'>
+        <a href="index.html"><img src="menu/logo.png" alt=""></a>
+    </div>
 
-      <div class='nav'>
-          <a class='nav-item' href="./">ГЛАВНАЯ</a>
-          <a class='nav-item' href="@">МЕНЮ</a>
-          <a class='nav-item' href="@">О НАС</a>
-          <a class='nav-item' href="@">БРОНЬ</a>
-      </div>
+    <!-- Navigation -->
+    <div class='nav'>
+        <a class='nav-item' id="button1" href="index.html" href="#name_link1">О нас</a>
+        <a class='nav-item' id="button2" href="index.html" href="#name_link2">Меню</a>
+        <a class='nav-item' id="button3" href="index.html" href="#name_link3">Отзывы</a>
+        <a class='nav-item' id="button4" href="index.html" href="#name_link4">Галерея</a>
+        <a class='nav-item' id="button5" href="index.html" href="#name_link5">Сотрудники</a>
+    </div>
 
-      <div class='cart'>
-          <a href="#">
-              <img class='cart-img' src="cart.png" alt="">
-          </a>
-      </div>
+    
 
-      <div class='phone'>
-          <div class='phone-holder'>
-              <div class='phone-img'>
-                  <img src="phone.png" alt="">
-              </div>
+    <!-- Reservation Button -->
+    <button class="primary" onclick="window.dialog.showModal();">Забронировать</button>
 
-              <div class='number'><a class='num' href='#'>+7 (777) 667-57-77</a></div>
-          </div>
-
-          <div class='phone-text'>
-              Свяжитесь с нами для <br> бронирования
-          </div>
-      </div>
-
-      <button class="primary" onclick="window.dialog.showModal();">Забронировать</button>
-
-<dialog id="dialog">
-<h2>+7 (777) 667-57-77</h2>
-<p>Звоните. Бронирование производится через телефон.</p>
-<button onclick="window.dialog.close();" aria-label="close" class="x">❌</button>
-</dialog>
+    <!-- Reservation Dialog -->
+    <dialog id="dialog">
+        <h2>+7 (777) 667-57-77</h2>
+        <p>Звоните. Бронирование производится через телефон.</p>
+        <button onclick="window.dialog.close();" aria-label="close" class="x">❌</button>
+    </dialog>
 </div>
 
-
-<div class="shell">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3">
-        <div class="wsk-cp-product">
-          <div class="wsk-cp-img">
-            <img src="menu/Snacks.jpg" alt="Product" class="img-responsive" />
+      <!-- Product Section -->
+      <section class="product">
+        <div class="product__info">
+          <div class="container">
+            <h1 class="product__title">Каталог</h1>
+            <h1 class="product__title product__title--gray">8 товаров</h1>
           </div>
-          <div class="wsk-cp-text">
-            <div class="category">
-              <span>Заказать</span>
+        </div>
+        <div class="cards">
+          <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img
+                  src="./images/dish1.png"
+                  alt="Битые огурцы"
+                />
+              </a>
+              <div class="card__label">-10%</div>
             </div>
-            <div class="title-product">
-              <h3>Рулетики из баклажанов</h3>
+            <div class="card__bottom">
+              <div class="card__prices">
+                <div class="card__price card__price--discount">790.00</div>
+                <div class="card__price card__price--common">869.00</div>
+              </div>
+              <a href="#" class="card__title">
+                Битые огурцы
+              </a>
+              <button class="card__add">В корзину</button>
             </div>
-            <div class="description-prod">
-              <p>Это невероятно вкусное блюдо, которое сочетает в себе хрустящую корочку и сочную начинку.</p>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img
+                  src="./images/dish2.png"
+                  alt="Спринг роллл с уткой"
+                />
+              </a>
+              <div class="card__label">-10%</div>
             </div>
-            <div class="card-footer">
-              <div class="wcf-left"><span class="price">500₽</span></div>
-              <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            <div class="card__bottom">
+              <div class="card__prices">
+                <div class="card__price card__price--discount">890.00</div>
+                <div class="card__price card__price--common">979.00</div>
+              </div>
+              <a href="#" class="card__title">
+                Спринг роллл с уткой
+              </a>
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img
+                  src="./images/dish3.png"
+                  alt="Хрустящие острые креветки"
+                />
+              </a>
+              <div class="card__label">-10%</div>
+            </div>
+            <div class="card__bottom">
+              <div class="card__prices">
+                <div class="card__price card__price--discount">1 190.00</div>
+                <div class="card__price card__price--common">1 309.00</div>
+              </div>
+              <a href="#" class="card__title">
+                Хрустящие острые креветки
+              </a>
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img
+                  src="./images/dish4.png"
+                  alt="Тартар из лосося"
+                />
+              </a>
+              <div class="card__label">-10%</div>
+            </div>
+            <div class="card__bottom">
+              <div class="card__prices">
+                <div class="card__price card__price--discount">1 390.00</div>
+                <div class="card__price card__price--common">1 529.00</div>
+              </div>
+              <a href="#" class="card__title">
+                Тартар из лосося
+              </a>
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img
+                  src="./images/dish5.png"
+                  alt="Креветки темпура"
+                />
+              </a>
+              <div class="card__label">-10%</div>
+            </div>
+            <div class="card__bottom">
+              <div class="card__prices">
+                <div class="card__price card__price--discount">1 390.00</div>
+                <div class="card__price card__price--common">1 529.00</div>
+              </div>
+              <a href="#" class="card__title">
+                Креветки темпура
+              </a>
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img
+                  src="./images/dish6.png"
+                  alt="Лосось юдзу"
+                />
+              </a>
+              <div class="card__label">-10%</div>
+            </div>
+            <div class="card__bottom">
+              <div class="card__prices">
+                <div class="card__price card__price--discount">1 590.00</div>
+                <div class="card__price card__price--common">1 749.00</div>
+              </div>
+              <a href="#" class="card__title">
+                Лосось юдзу</a
+              >
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img
+                  src="./images/dish7.png"
+                  alt="Карпачо гребешок с трюфелем"
+                />
+              </a>
+              <div class="card__label">-10%</div>
+            </div>
+            <div class="card__bottom">
+              <div class="card__prices">
+                <div class="card__price card__price--discount">2 590.00</div>
+                <div class="card__price card__price--common">2 849.00</div>
+              </div>
+              <a href="#" class="card__title">
+                Карпачо гребешок с трюфелем </a
+              >
+              <button class="card__add">В корзину</button>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__top">
+              <a href="#" class="card__image">
+                <img
+                  src="./images/dish8.png"
+                  alt="Тартар из тунца"
+                />
+              </a>
+              <div class="card__label">-10%</div>
+            </div>
+            <div class="card__bottom">
+              <div class="card__prices">
+                <div class="card__price card__price--discount">4 500.00</div>
+                <div class="card__price card__price--common">5 000.00</div>
+              </div>
+              <a href="#" class="card__title">
+                Тартар из тунца </a
+              >
+              <button class="card__add">В корзину</button>
             </div>
           </div>
         </div>
-      </div>
-      <div class="col-md-3">
-        <div class="wsk-cp-product">
-          <div class="wsk-cp-img"><img src="menu/Snacks.jpg" alt="Product" class="img-responsive" /></div>
-          <div class="wsk-cp-text">
-            <div class="category">
-              <span>Заказать</span>
+      </section>
+      <button class="cart" id="cart">
+        <img class="cart__image" src="./images/cart.png" alt="Cart" srcset="" />
+        <div class="cart__num" id="cart_num">0</div>
+      </button>
+      <div class="popup" id="popup_">
+        <div class="popup__container" id="popup_container">
+          <div class="popup__item">
+            <h1 class="popup__title">Оформление заказа</h1>
+          </div>
+          <div class="popup__item" id="popup_product_list">
+            <div class="popup__product">
+              <div class="popup__product-wrap">
+                <img
+                  src="./images/dish1.png"
+                  alt="Тартар из тунца"
+                  class="popup__product-image"
+                />
+                <h2 class="popup__product-title">
+                  Тартар из тунца
+                </h2>
+              </div>
+              <div class="popup__product-wrap">
+                <div class="popup__product-price">4 500.00</div>
+                <button class="popup__product-delete">&#10006;</button>
+              </div>
             </div>
-            <div class="title-product">
-              <h3>Рулетики из баклажанов</h3>
+          </div>
+          <div class="popup__item">
+            <div class="popup__cost">
+              <h2 class="popup__cost-title">Итого</h2>
+              <output class="popup__cost-value" id="popup_cost">0</output>
             </div>
-            <div class="description-prod">
-              <p>Это невероятно вкусное блюдо, которое сочетает в себе хрустящую корочку и сочную начинку.</p>
+            <div class="popup__cost">
+              <h2 class="popup__cost-title">Скидка</h2>
+              <output class="popup__cost-value" id="popup_discount">0</output>
             </div>
-            <div class="card-footer">
-              <div class="wcf-left"><span class="price">500₽</span></div>
-              <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+            <div class="popup__cost">
+              <h2 class="popup__cost-title">Итого со скидкой</h2>
+              <output class="popup__cost-value" id="popup_cost_discount"
+                >0</output
+              >
             </div>
+            <button class="order" onclick="window.dialog_order.showModal();">Заказать</button>
+            <dialog id="dialog_order">
+              <h2>Ваш заказ принят</h2>
+              <button onclick="window.dialog_order.close();" aria-label="close_order" class="x">❌</button>
+            </dialog>
+            <button class="popup__close" id="popup_close">&#10006;</button>
           </div>
         </div>
       </div>
-      <div class="col-md-3">
-        <div class="wsk-cp-product">
-          <div class="wsk-cp-img"><img src="menu/Snacks.jpg" alt="Product" class="img-responsive" /></div>
-          <div class="wsk-cp-text">
-            <div class="category">
-              <span>Заказать</span>
-            </div>
-            <div class="title-product">
-              <h3>Рулетики из баклажанов</h3>
-            </div>
-            <div class="description-prod">
-              <p>Это невероятно вкусное блюдо, которое сочетает в себе хрустящую корочку и сочную начинку.</p>
-            </div>
-            <div class="card-footer">
-              <div class="wcf-left"><span class="price">500₽</span></div>
-              <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="wsk-cp-product">
-          <div class="wsk-cp-img"><img src="menu/Snacks.jpg" alt="Product" class="img-responsive" /></div>
-          <div class="wsk-cp-text">
-            <div class="category">
-              <span>Заказать</span>
-            </div>
-            <div class="title-product">
-              <h3>Рулетики из баклажанов</h3>
-            </div>
-            <div class="description-prod">
-              <p>Это невероятно вкусное блюдо, которое сочетает в себе хрустящую корочку и сочную начинку.</p>
-            </div>
-            <div class="card-footer">
-              <div class="wcf-left"><span class="price">500₽</span></div>
-              <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    
     
   
+  <footer class="footer-distributed">
+        
+    <div class="footer-left">
+
+        <a href="index.html"><img src="menu/logo2.png" alt=""></a>
+
+        <p class="footer-links">
+            <a class='nav-item' id="button1" href="#name_link1">О нас</a>
+            <a class='nav-item' id="button2" href="#name_link2">Меню</a>
+            <a class='nav-item' id="button3" href="#name_link3">Отзывы</a>
+            <a class='nav-item' id="button4" href="#name_link4">Галерея</a>
+            <a class='nav-item' id="button5" href="#name_link5">Сотрудники</a>
+        </p>
+
+        <p class="footer-company-name">@2023 ALIMOV | Restaurant & Bar</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>г.Казань </span> Файзи 12</p>
+        </div>
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+7 (777) 667-57-77</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="#">rasimalimov26@gmail.com</a></p>
+        </div>
+
+    </div>
+
+    <div class="footer-right">
+
+        <p class="footer-company-about">
+            <span>О компании</span>
+            "Сайт разработан в целях выполнения курсового проекта."
+        </p>
+
+        <div class="footer-icons">
+
+            <img class='instagram' src='menu/instagram.png'>
+            
+
+        </div>
+
+    </div>
+
+</footer>
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="slider.js"></script>
 </body>
 </html>
